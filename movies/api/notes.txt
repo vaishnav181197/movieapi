@@ -1,0 +1,48 @@
+API PLANNING:
+
+1.to get all movie list
+    url:127.0.0.1:8000/movies
+    Method:GET
+    response:movie list
+
+2.to get specific movie details
+    url:127.0.0.1:8000/movies/1
+    method:GET
+    response:a specific movie
+
+3.to aadd a new movie
+    url:127.0.0.1:8000/movies
+    method:POST
+    data:{
+        "name":"amaram",
+        "year":1989,
+        "director":"ar"
+        "genre":"drama"
+    }
+    response:complete movie list
+
+4.to update a specific movie details:
+    url:127.0.0.1:8000/movies/1
+    method:PUT
+    data:{"id":1,"name":"Sphadikam","year":1995,"director":"Bhadran","genre":"drama"}
+    response:complete list
+
+5.to delete a specific movie
+    url:127.0.0.1:8000/movies/1
+    method:DELETE
+    response:complete list
+
+6.to get list of movies in specific genre
+    url:127.0.0.1:8000/movies?genre=drama
+    method:GET
+    response:movies list under specific genre
+
+7.to get list of movies released before 2015
+    url:127.0.0.1:8000/movies?yearlt=2015
+    method:GET
+    response:movies list which released before 2015
+
+8.to get list of action films which released brfore 2015
+    url:127.0.0.1:8000/movies?genre=action&yearlt=2015
+    method:GET
+    
